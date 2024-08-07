@@ -36,5 +36,8 @@
     "packages/*",
     "tooling/*"
   ],
-  "packageManager": "bun@v1.1.10"
+  "packageManager": "bun@v1.1.10",
+  "dependencies": {
+    "@rajesh896/broprint.js": "^2.1.1"
+  }
 }

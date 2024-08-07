@@ -1,3 +1,4 @@
+// "use client"
 import Link from "next/link";
 
 import * as Icons from "@saasfly/ui/icons";
@@ -15,6 +16,8 @@ import { WordReveal } from "~/components/word-reveal";
 import type { Locale } from "~/config/i18n-config";
 import { getDictionary } from "~/lib/get-dictionary";
 import type { Meteor } from "~/types/meteors";
+import { getCurrentBrowserFingerPrint } from "@rajesh896/broprint.js";
+// import { useState } from "react";
 
 const meteors_data: Meteor = {
   name: "Join our Discord",
@@ -32,7 +35,13 @@ export default async function IndexPage({
   };
 }) {
   const dict = await getDictionary(lang);
-
+//   const [fingerprint, setFingerprint] = useState("");
+//   const dataa= getCurrentBrowserFingerPrint().then((fp) => {
+//     // fingerprint is your unique browser id.
+//     // This is well tested
+//     setFingerprint(fp)
+//     // the result you receive here is the combination of Canvas fingerprint and audio fingerprint.
+// })
   return (
     <>
       <section className="w-full px-8 sm:px-48 md:px-48 xl:h-[100vh] xl:px-48">
@@ -49,6 +58,7 @@ export default async function IndexPage({
                 <h1 className="relative mb-6 max-w-4xl text-left text-4xl font-bold dark:text-zinc-100 sm:text-7xl md:text-7xl xl:text-7xl">
                   {dict.marketing.title ||
                     "Saasfly: A new SaaS player? Make things easier."}
+                      {/* <span className="text-sm font-normal">Fingerprint: {fingerprint}</span> */}
                 </h1>
               </div>
 
