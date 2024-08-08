@@ -18,9 +18,9 @@ export function SiteFooter({
   dict,
 }: {
   className?: string;
-  params: {
-    lang: string;
-  };
+  // params: {
+  //   lang: string;
+  // };
 
   dict: Record<string, string | Record<string, string>>;
 }) {

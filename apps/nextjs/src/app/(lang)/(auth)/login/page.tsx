@@ -27,7 +27,7 @@ export default async function LoginPage({
   return (
     <div className="container flex h-screen w-screen flex-col items-center justify-center">
       <Link
-        href={`/${lang}`}
+        href={`/`}
         className={cn(
           buttonVariants({ variant: "ghost" }),
           "absolute left-4 top-4 md:left-8 md:top-8",
@@ -57,7 +57,7 @@ export default async function LoginPage({
         <UserAuthForm lang={lang} dict={dict.login} />
         <p className="px-8 text-center text-sm text-muted-foreground">
           <Link
-            href={`/${lang}/register`}
+            href={`/register`}
             className="hover:text-brand underline underline-offset-4"
           >
             {dict.login.singup_title}

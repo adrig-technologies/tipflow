@@ -21,9 +21,9 @@ interface NavBarProps {
   children?: React.ReactNode;
   rightElements?: React.ReactNode;
   scroll?: boolean;
-  params: {
-    lang: string;
-  };
+  // params: {
+  //   lang: string;
+  // };
   marketing: Dictionary;
   dropdown: Record<string, string>;
 }
@@ -34,7 +34,7 @@ export function NavBar({
   children,
   rightElements,
   scroll = false,
-  params: { lang },
+  // params: { lang },
   marketing,
   dropdown,
 }: NavBarProps) {
@@ -47,7 +47,10 @@ export function NavBar({
       }`}
     >
       <div className="container flex h-16 items-center justify-between py-4">
-        <MainNav items={items} params={{ lang: `${lang}` }}>
+        <MainNav 
+        items={items} 
+        // params={{ lang: `${lang}` }}
+        >
           {children}
         </MainNav>
 
@@ -56,7 +59,7 @@ export function NavBar({
           <LocaleChange url={"/"} />
           {!user ? (
             <Link
-              href={`/${lang}/login`}
+              href={`/login`}
               className={cn(buttonVariants({ variant: "outline", size: "sm" }))}
             >
               {typeof marketing.login === "string"
@@ -68,7 +71,7 @@ export function NavBar({
           {user ? (
             <UserAccountNav
               user={user}
-              params={{ lang: `${lang}` }}
+              // params={{ lang: `${lang}` }}
               dict={dropdown}
             />
           ) : (

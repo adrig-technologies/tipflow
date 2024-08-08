@@ -28,13 +28,13 @@ const meteors_data: Meteor = {
 };
 
 export default async function IndexPage({
-  params: { lang },
+  // params: { lang },
 }: {
-  params: {
-    lang: Locale;
-  };
+  // params: {
+  //   lang: Locale;
+  // };
 }) {
-  const dict = await getDictionary(lang);
+  // const dict = await getDictionary(lang);
 //   const [fingerprint, setFingerprint] = useState("");
 //   const dataa= getCurrentBrowserFingerPrint().then((fp) => {
 //     // fingerprint is your unique browser id.
@@ -50,13 +50,13 @@ export default async function IndexPage({
             <div className="flex flex-col pt-4 md:pt-28 lg:pt-28 xl:pt-28">
               <Link href="https://document.saasfly.io" target="_blank">
                 <DocumentGuide>
-                  {dict.marketing.introducing || "Introducing Saasfly"}
+                  { "Introducing Saasfly"}
                 </DocumentGuide>
               </Link>
 
               <div className="mt-6">
                 <h1 className="relative mb-6 max-w-4xl text-left text-4xl font-bold dark:text-zinc-100 sm:text-7xl md:text-7xl xl:text-7xl">
-                  {dict.marketing.title ||
+                  {
                     "Saasfly: A new SaaS player? Make things easier."}
                       {/* <span className="text-sm font-normal">Fingerprint: {fingerprint}</span> */}
                 </h1>
@@ -64,17 +64,17 @@ export default async function IndexPage({
 
               <div>
                 <span className="text-zinc-500 sm:text-xl">
-                  {dict.marketing.sub_title ||
+                  {
                     "Your complete All-in-One solution for building SaaS services."}
                 </span>
                 <TypewriterEffectSmooths />
               </div>
 
               <div className="mb-4 mt-6 flex w-full flex-col justify-center space-y-4 sm:flex-row sm:justify-start sm:space-x-8 sm:space-y-0">
-                <Link href={`${lang}/login`}>
+                <Link href={`/login`}>
                   <ShimmerButton className="mx-auto flex justify-center">
                     <span className="z-10 w-48 whitespace-pre bg-gradient-to-b from-black from-30% to-gray-300/80 bg-clip-text text-center text-sm font-semibold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 dark:text-transparent">
-                      {dict.marketing.get_started}
+                      {"Get Started"}
                     </span>
                   </ShimmerButton>
                 </Link>
@@ -83,7 +83,7 @@ export default async function IndexPage({
                   <div className="flex h-full items-center justify-center">
                     <Icons.GitHub className="mr-2 h-6 w-6" />
                     <span className="text-base font-semibold">
-                      {dict.marketing.view_on_github || "View on GitHub"}
+                      { "View on GitHub"}
                     </span>
                   </div>
                 </Link>

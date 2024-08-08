@@ -95,7 +95,7 @@ export function ClusterConfig({ cluster, params: { lang } }: ClusterProps) {
       });
     }
 
-    router.push(`/${lang}/dashboard`);
+    router.push(`/dashboard`);
     router.refresh();
 
     return toast({

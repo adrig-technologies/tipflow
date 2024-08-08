@@ -50,7 +50,7 @@ export function UserAuthForm({
     const signInResult = await signIn("email", {
       email: data.email.toLowerCase(),
       redirect: false,
-      callbackUrl: searchParams?.get("from") ?? `/${lang}/dashboard`,
+      callbackUrl: searchParams?.get("from") ?? `/dashboard`,
     }).catch((error) => {
       console.error("Error during sign in:", error);
     });

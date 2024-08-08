@@ -37,7 +37,7 @@ export function DashboardNav({ items, params: { lang } }: DashboardNavProps) {
           item.href && (
             <Link
               key={index}
-              href={item.disabled ? "/" : `/${lang}` + item.href}
+              href={item.disabled ? "/" :  item.href}
             >
               <span
                 className={cn(
