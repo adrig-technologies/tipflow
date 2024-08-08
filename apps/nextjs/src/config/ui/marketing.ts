@@ -2,14 +2,8 @@ import type { Locale } from "~/config/i18n-config";
 import { getDictionary } from "~/lib/get-dictionary";
 import type { MarketingConfig } from "~/types";
 
-export const getMarketingConfig = async ({
-  params: { lang },
-}: {
-  params: {
-    lang: Locale;
-  };
-}): Promise<MarketingConfig> => {
-  const dict = await getDictionary(lang);
+export const getMarketingConfig = async (): Promise<MarketingConfig> => {
+  const dict = await getDictionary("en");
   return {
     mainNav: [
       {

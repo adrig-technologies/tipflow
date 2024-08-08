@@ -13,11 +13,11 @@ export function WobbleCardShow() {
       >
         <div className="max-w-xs">
           <h2 className="text-balance text-left text-base font-semibold tracking-[-0.015em] text-white md:text-xl lg:text-3xl">
-            Stay up to date
+            Explore Tipflow
           </h2>
           <p className="mt-4 text-left  text-base/6 text-neutral-200">
-            We are committed to continually improving our starter kit and
-            providing the best possible resources for building saas service.
+          We're dedicated to continually enhancing Tipflow, ensuring you have the best tools and resources to optimize your lead generation and online presence.
+
           </p>
         </div>
         <img
@@ -30,21 +30,20 @@ export function WobbleCardShow() {
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 min-h-[300px]">
         <h2 className="max-w-80  text-balance text-left text-base font-semibold tracking-[-0.015em] text-white md:text-xl lg:text-3xl">
-          Philosophy
+        Our Philosophy
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-          When creating this starter kit, we had several guiding principles in
-          mind.
+        When designing Tipflow, we focused on providing powerful, AI-driven solutions that simplify lead generation and customer engagement.
+
         </p>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="max-w-sm">
           <h2 className="max-w-sm text-balance  text-left text-base font-semibold tracking-[-0.015em] text-white md:max-w-lg md:text-xl lg:text-3xl">
-            Streamline Your SaaS Development with Nextify’s Starter Kit.
+          Enhance Your Business with Tipflow
           </h2>
           <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-            Our starter kit embodies this expertise, empowering both our team
-            and clients to build high-quality SaaS services faster and easier.
+          Tipflow embodies our commitment to innovation, enabling you to generate leads, engage users, and grow your business more effectively and efficiently.
           </p>
         </div>
         <img

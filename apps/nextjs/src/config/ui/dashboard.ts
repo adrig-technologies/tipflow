@@ -2,14 +2,8 @@ import type { Locale } from "~/config/i18n-config";
 import { getDictionary } from "~/lib/get-dictionary";
 import type { DashboardConfig } from "~/types";
 
-export const getDashboardConfig = async ({
-  params: { lang },
-}: {
-  params: {
-    lang: Locale;
-  };
-}): Promise<DashboardConfig> => {
-  const dict = await getDictionary(lang);
+export const getDashboardConfig = async (): Promise<DashboardConfig> => {
+  const dict = await getDictionary("en");
 
   return {
     mainNav: [

@@ -29,9 +29,9 @@ const fontHeading = localFont({
   variable: "--font-heading",
 });
 
-export function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ lang: locale }));
-}
+// export function generateStaticParams() {
+//   return i18n.locales.map((locale) => ({ lang: locale }));
+// }
 
 export const metadata = {
   title: {
@@ -50,10 +50,10 @@ export const metadata = {
   ],
   authors: [
     {
-      name: "saasfly",
+      name: "tipflow",
     },
   ],
-  creator: "Saasfly",
+  creator: "TipFlow",
   openGraph: {
     type: "website",
     locale: "en_US",

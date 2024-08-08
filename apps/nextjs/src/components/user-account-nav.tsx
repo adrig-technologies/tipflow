@@ -16,15 +16,11 @@ import { UserAvatar } from "~/components/user-avatar";
 
 interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
   user: Pick<User, "name" | "image" | "email">;
-  params: {
-    lang: string;
-  };
   dict: Record<string, string>;
 }
 
 export function UserAccountNav({
   user,
-  params: { lang },
   dict,
 }: UserAccountNavProps) {
   return (
@@ -48,13 +44,13 @@ export function UserAccountNav({
         </div>
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>
-          <Link href={`/${lang}/dashboard`}>{dict.dashboard}</Link>
+          <Link href={`/dashboard`}>{dict.dashboard}</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href={`/${lang}/dashboard/billing`}>{dict.billing}</Link>
+          <Link href={`/dashboard/billing`}>{dict.billing}</Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <Link href={`/${lang}/dashboard/settings`}>{dict.settings}</Link>
+          <Link href={`/dashboard/settings`}>{dict.settings}</Link>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem
@@ -62,7 +58,7 @@ export function UserAccountNav({
           onSelect={(event) => {
             event.preventDefault();
             signOut({
-              callbackUrl: `${window.location.origin}/${lang}/login`,
+              callbackUrl: `${window.location.origin}/login`,
             }).catch((error) => {
               console.error("Error during sign out:", error);
             });

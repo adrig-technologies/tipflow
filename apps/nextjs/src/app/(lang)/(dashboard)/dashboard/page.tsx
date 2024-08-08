@@ -26,11 +26,7 @@ export const metadata = {
 
 // export type ClusterType = RouterOutputs["k8s"]["getClusters"][number];
 export default async function DashboardPage({
-  params: { lang },
 }: {
-  params: {
-    lang: Locale;
-  };
 }) {
   //don't need to check auth here, because we have a global auth check in _app.tsx
   const user = await getCurrentUser();
@@ -49,7 +45,7 @@ export default async function DashboardPage({
   const result: ClustersArray = await trpc.k8s.getClusters.query();
   if (result) {
     const clusters = result;
-    const dict = await getDictionary(lang);
+    const dict = await getDictionary("en");
     return (
       <DashboardShell>
         <DashboardHeader

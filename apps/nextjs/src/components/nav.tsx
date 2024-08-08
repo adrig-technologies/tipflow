@@ -10,9 +10,6 @@ import type { SidebarNavItem } from "~/types";
 
 interface DashboardNavProps {
   items: SidebarNavItem[];
-  params: {
-    lang: string;
-  };
 }
 
 const iconMapObj = new Map([
@@ -21,7 +18,7 @@ const iconMapObj = new Map([
   ["settings", Icons.Settings],
 ]);
 
-export function DashboardNav({ items, params: { lang } }: DashboardNavProps) {
+export function DashboardNav({ items }: DashboardNavProps) {
   const path = usePathname();
 
   if (!items?.length) {
@@ -37,7 +34,8 @@ export function DashboardNav({ items, params: { lang } }: DashboardNavProps) {
           item.href && (
             <Link
               key={index}
-              href={item.disabled ? "/" : `/${lang}` + item.href}
+              // href={item.disabled ? "/" : `/${lang}` + item.href} MYEDIT
+              href={item.disabled ? "/" :  item.href}
             >
               <span
                 className={cn(

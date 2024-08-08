@@ -13,9 +13,9 @@ interface DashboardLayoutProps {
   };
 }
 
-export function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ lang: locale }));
-}
+// export function generateStaticParams() {
+//   return i18n.locales.map((locale) => ({ lang: locale }));
+// }
 
 export default async function DashboardLayout({
   children,
@@ -67,7 +67,6 @@ export default async function DashboardLayout({
       </div>
       <SiteFooter
         className="border-t"
-        params={{ lang: `${lang}` }}
         dict={dict.common}
       />
     </div>

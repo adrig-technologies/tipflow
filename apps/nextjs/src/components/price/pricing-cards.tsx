@@ -35,12 +35,11 @@ export function PricingCards({
   userId,
   subscriptionPlan,
   dict,
-  params: { lang },
 }: PricingCardsProps) {
   const isYearlyDefault = true;
   const [isYearly, setIsYearly] = useState<boolean>(isYearlyDefault);
   const signInModal = useSigninModal();
-  const pricingData = priceDataMap[lang];
+  const pricingData = priceDataMap["en"];
   const toggleBilling = () => {
     setIsYearly(!isYearly);
   };

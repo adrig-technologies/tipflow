@@ -44,9 +44,6 @@ import type { Cluster } from "~/types/k8s";
 
 interface ClusterProps {
   cluster: Pick<Cluster, "id" | "name" | "location">;
-  params: {
-    lang: string;
-  };
 }
 
 const FormSchema = z.object({
@@ -66,7 +63,7 @@ const isValidLocation = (
   );
 };
 
-export function ClusterConfig({ cluster, params: { lang } }: ClusterProps) {
+export function ClusterConfig({ cluster }: ClusterProps) {
   const form = useForm<z.infer<typeof FormSchema>>({
     defaultValues: {
       name: cluster.name, // default value
@@ -95,7 +92,7 @@ export function ClusterConfig({ cluster, params: { lang } }: ClusterProps) {
       });
     }
 
-    router.push(`/${lang}/dashboard`);
+    router.push(`/dashboard`);
     router.refresh();
 
     return toast({

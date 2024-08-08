@@ -13,32 +13,32 @@ interface Item {
 
 let notifications = [
   {
-    name: "Payment received",
-    description: "Stripe subscription",
+    name: "Fingerprinting",
+    description: "User Identification",
     time: "15m ago",
 
-    icon: "💸",
+    icon: "🔐",
     color: "#00C9A7",
   },
   {
-    name: "User signed up",
-    description: "Auth, simple and clean",
+    name: "Behaviour insights",
+    description: "Actionable Data",
     time: "10m ago",
-    icon: "👤",
+    icon: "💬",
     color: "#FFB800",
   },
   {
-    name: "New Emails",
-    description: "Create beautiful emails",
+    name: "Personalised bots",
+    description: "Tailored Interactions",
     time: "5m ago",
-    icon: "💬",
+    icon: "🤖",
     color: "#FF3D71",
   },
   {
-    name: "Easy Deploy",
-    description: "Deploy your app with ease",
+    name: "Gemini powered",
+    description: "AI-Driven Precision",
     time: "2m ago",
-    icon: "🗞️",
+    icon: "✨",
     color: "#1E86FF",
   },
 ];

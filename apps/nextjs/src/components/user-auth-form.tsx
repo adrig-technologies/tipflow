@@ -17,7 +17,6 @@ import { toast } from "@saasfly/ui/use-toast";
 type Dictionary = Record<string, string>;
 
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {
-  lang: string;
   dict: Dictionary;
 }
 
@@ -29,7 +28,6 @@ type FormData = z.infer<typeof userAuthSchema>;
 
 export function UserAuthForm({
   className,
-  lang,
   dict,
   ...props
 }: UserAuthFormProps) {
@@ -50,7 +48,7 @@ export function UserAuthForm({
     const signInResult = await signIn("email", {
       email: data.email.toLowerCase(),
       redirect: false,
-      callbackUrl: searchParams?.get("from") ?? `/${lang}/dashboard`,
+      callbackUrl: searchParams?.get("from") ?? `/dashboard`,
     }).catch((error) => {
       console.error("Error during sign in:", error);
     });

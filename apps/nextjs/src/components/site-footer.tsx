@@ -18,9 +18,6 @@ export function SiteFooter({
   dict,
 }: {
   className?: string;
-  params: {
-    lang: string;
-  };
 
   dict: Record<string, string | Record<string, string>>;
 }) {
@@ -38,7 +35,7 @@ export function SiteFooter({
             {getCopyrightText(dict)}
           </p>
         </div>
-        <ModeToggle />
+        {/* <ModeToggle /> */}
       </div>
     </footer>
   );

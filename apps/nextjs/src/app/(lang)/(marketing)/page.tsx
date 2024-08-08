@@ -20,21 +20,17 @@ import { getCurrentBrowserFingerPrint } from "@rajesh896/broprint.js";
 // import { useState } from "react";
 
 const meteors_data: Meteor = {
-  name: "Join our Discord",
+  name: "Join our B2B",
   description:
-    "Join our Discord server to chat with other developers and get help.",
+    "Join our B2B networking community to connect with industry leaders and peers.",
   button_content: "Chat with us",
   url: "https://discord.gg/8SwSX43wnD",
 };
 
 export default async function IndexPage({
-  params: { lang },
 }: {
-  params: {
-    lang: Locale;
-  };
 }) {
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary("en");
 //   const [fingerprint, setFingerprint] = useState("");
 //   const dataa= getCurrentBrowserFingerPrint().then((fp) => {
 //     // fingerprint is your unique browser id.
@@ -48,30 +44,30 @@ export default async function IndexPage({
         <div className="grid grid-cols-1 gap-10 pb-10 md:pb-40 xl:grid-cols-2">
           <div className="flex flex-col items-start">
             <div className="flex flex-col pt-4 md:pt-28 lg:pt-28 xl:pt-28">
-              <Link href="https://document.saasfly.io" target="_blank">
+              <Link href="https://www.adrig.co.in/" target="_blank">
                 <DocumentGuide>
-                  {dict.marketing.introducing || "Introducing Saasfly"}
+                  {"Introducing ADRIG"}
                 </DocumentGuide>
               </Link>
 
               <div className="mt-6">
-                <h1 className="relative mb-6 max-w-4xl text-left text-4xl font-bold dark:text-zinc-100 sm:text-7xl md:text-7xl xl:text-7xl">
-                  {dict.marketing.title ||
-                    "Saasfly: A new SaaS player? Make things easier."}
+                <h1 className="relative mb-6 max-w-4xl text-left text-2xl font-bold dark:text-zinc-100 sm:text-4xl md:text-4xl xl:text-4xl">
+                  {
+                    "Tipflow: Gemini - Powered SaaS. Generate Leads, Boost Success."}
                       {/* <span className="text-sm font-normal">Fingerprint: {fingerprint}</span> */}
                 </h1>
               </div>
 
               <div>
-                <span className="text-zinc-500 sm:text-xl">
-                  {dict.marketing.sub_title ||
-                    "Your complete All-in-One solution for building SaaS services."}
+                <span className="text-zinc-500 sm:text-lg">
+                  {
+                    "Boost Revenue by Converting Prospects to Clients and Ensuring Customer Success with Tipflow."}
                 </span>
                 <TypewriterEffectSmooths />
               </div>
 
               <div className="mb-4 mt-6 flex w-full flex-col justify-center space-y-4 sm:flex-row sm:justify-start sm:space-x-8 sm:space-y-0">
-                <Link href={`${lang}/login`}>
+                <Link href={`/login`}>
                   <ShimmerButton className="mx-auto flex justify-center">
                     <span className="z-10 w-48 whitespace-pre bg-gradient-to-b from-black from-30% to-gray-300/80 bg-clip-text text-center text-sm font-semibold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 dark:text-transparent">
                       {dict.marketing.get_started}
@@ -83,7 +79,7 @@ export default async function IndexPage({
                   <div className="flex h-full items-center justify-center">
                     <Icons.GitHub className="mr-2 h-6 w-6" />
                     <span className="text-base font-semibold">
-                      {dict.marketing.view_on_github || "View on GitHub"}
+                      {"Contact us"}
                     </span>
                   </div>
                 </Link>

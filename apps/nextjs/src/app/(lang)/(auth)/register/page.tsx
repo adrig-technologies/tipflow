@@ -13,18 +13,14 @@ export const metadata = {
 };
 
 export default async function RegisterPage({
-  params: { lang },
 }: {
-  params: {
-    lang: Locale;
-  };
 }) {
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary("en");
 
   return (
     <div className="container grid h-screen w-screen flex-col items-center justify-center lg:max-w-none lg:grid-cols-2 lg:px-0">
       <Link
-        href={`/${lang}/login`}
+        href={`/login`}
         className={cn(
           buttonVariants({ variant: "ghost" }),
           "absolute right-4 top-4 md:right-8 md:top-8",
@@ -44,18 +40,18 @@ export default async function RegisterPage({
               Enter your email below to create your account
             </p>
           </div>
-          <UserAuthForm lang={lang} dict={dict.login} />
+          <UserAuthForm dict={dict.login} />
           <p className="px-8 text-center text-sm text-muted-foreground">
             By clicking continue, you agree to our{" "}
             <Link
-              href={`/${lang}/terms`}
+              href={`/terms`}
               className="hover:text-brand underline underline-offset-4"
             >
               Terms of Service
             </Link>{" "}
             and{" "}
             <Link
-              href={`/${lang}/privacy`}
+              href={`/privacy`}
               className="hover:text-brand underline underline-offset-4"
             >
               Privacy Policy

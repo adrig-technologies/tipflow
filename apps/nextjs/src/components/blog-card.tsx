@@ -43,9 +43,9 @@ const blogContent = {
   slug: "Making-Sense-of-React-Server-Components",
   author: "Nextify",
   date: "26th March, 2024",
-  title: "Making Sense of React Server Components",
+  title: "Harnessing the Power of GEMINI in SaaS",
   description:
-    "So, here's something that makes me feel old: React celebrated its 10th birthday this year!",
+    "In today's tech landscape, innovation is key. GEMINI, an advanced AI model, is reshaping SaaS by driving smarter, more efficient workflows.",
   image:
     "https://cdn.sanity.io/images/tpb4obti/production/50c13f886c039225be4e7e99023b8f1e2b4161b9-1792x1024.png",
   authorAvatar:

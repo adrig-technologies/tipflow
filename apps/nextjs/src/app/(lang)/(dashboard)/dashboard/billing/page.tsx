@@ -23,13 +23,9 @@ interface Subscription {
 }
 
 export default async function BillingPage({
-  params: { lang },
 }: {
-  params: {
-    lang: Locale;
-  };
 }) {
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary("en");
   return (
     <DashboardShell
       title={dict.business.billing.billing}
