@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse, NextFetchEvent } from "next/server";
 import { getToken } from "next-auth/jwt";
 import { withAuth } from "next-auth/middleware";
 
@@ -54,7 +54,7 @@ export default async function middleware(request: NextRequest) {
 }
 
 const authMiddleware = withAuth(
-  async function middlewares(req) {
+  async function middlewares(req: NextRequest, event: NextFetchEvent) {
     const token = await getToken({ req });
     const isAuth = !!token;
     const isAdmin = token?.isAdmin;
