@@ -53,7 +53,7 @@ export function NavBar({
 
         <div className="flex items-center space-x-3">
           {rightElements}
-          <LocaleChange url={"/"} />
+          {/* <LocaleChange url={"/"} /> */}
           {!user ? (
             <Link
               href={`/${lang}/login`}
