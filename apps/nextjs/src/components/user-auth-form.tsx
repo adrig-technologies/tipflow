@@ -104,14 +104,13 @@ export function UserAuthForm({
           </button>
         </div>
       </form>
-      <div className="relative">
+      {/* <div className="relative">
         <div className="absolute inset-0 flex items-center">
           <span className="w-full border-t" />
         </div>
         <div className="relative flex justify-center text-xs uppercase">
           <span className="bg-background px-2 text-muted-foreground">
             {dict.signin_others}
-            {/* Or continue with */}
           </span>
         </div>
       </div>
@@ -132,7 +131,7 @@ export function UserAuthForm({
           <Icons.GitHub className="mr-2 h-4 w-4" />
         )}{" "}
         Github
-      </button>
+      </button> */}
     </div>
   );
 }
