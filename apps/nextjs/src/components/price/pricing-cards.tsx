@@ -103,29 +103,38 @@ export function PricingCards({
                 </p>
 
                 <div className="flex flex-row">
-                  <div className="flex items-end">
-                    <div className="flex text-left text-3xl font-semibold leading-6">
-                      {isYearly && offer?.prices?.monthly > 0 ? (
-                        <>
-                          <span className="mr-2 text-muted-foreground line-through">
-                            ${offer?.prices?.monthly}
-                          </span>
-                          <span>${offer?.prices?.yearly / 12}</span>
-                        </>
-                      ) : (
-                        `$${offer?.prices?.monthly}`
-                      )}
+                {offer?.id !== "business" && (
+                    <div className="flex items-end"> 
+                      <div className="flex text-left text-3xl font-semibold leading-6">
+                        {isYearly && offer?.prices?.monthly > 0 ? (
+                          <>
+                            <span className="mr-2 text-muted-foreground line-through">
+                              ${offer?.prices?.monthly}
+                            </span>
+                            <span>${offer?.prices?.yearly / 12}</span>
+                          </>
+                        ) : (
+                          `$${offer?.prices?.monthly}`
+                        )}
+                      </div>
+                      <div className="-mb-1 ml-2 text-left text-sm font-medium">
+                        <div>{dict.mo}</div>
+                      </div>
                     </div>
-                    <div className="-mb-1 ml-2 text-left text-sm font-medium">
-                      <div>{dict.mo}</div>
-                    </div>
-                  </div>
+                  )}
+
                 </div>
                 {offer.prices.monthly > 0 ? (
                   <div className="text-left text-sm text-muted-foreground">
-                    {isYearly
-                      ? `$${offer?.prices?.yearly} ${dict.annual_info}`
-                      : `${dict.monthly_info}`}
+                    {offer?.id !== "business" ? (
+  <div>
+    {isYearly
+      ? `$${offer?.prices?.yearly} ${dict.annual_info}`
+      : `${dict.monthly_info}`}
+  </div>
+) : (
+  <div>Get in touch</div>
+)}
                   </div>
                 ) : null}
               </div>

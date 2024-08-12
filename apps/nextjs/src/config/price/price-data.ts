@@ -87,19 +87,21 @@ export const priceDataMap: Record<string, SubscriptionPlanTranslation[]> = {
       title: "Starter",
       description: "For Beginners",
       benefits: [
-        "Up to 1 cluster per month",
-        "Basic analytics and reporting",
-        "Access to basic features",
+        "Free Website Analysis & Consultancy",
+        "Limited SEO Optimization & Page Ranking",
+        "Basic Click-Through Analytics & User Behavior Insights",
+        "Limited Email Automation & Meeting Scheduling",
+        "Basic CRM Integration"
       ],
       limitations: [
-        "No priority access to new features",
-        "Limited customer support",
-        "No custom branding",
-        "Limited access to business resources",
+        "Custom Reporting",
+        "Priority Support",
+        "Personalized Chatbots Powered by GEMINI LLM",
+        "AI-Driven LinkedIn Prospecting"
       ],
       prices: {
-        monthly: 0,
-        yearly: 0,
+        monthly: 80,
+        yearly: 840,
       },
       stripeIds: {
         monthly: null,
@@ -111,19 +113,22 @@ export const priceDataMap: Record<string, SubscriptionPlanTranslation[]> = {
       title: "Pro",
       description: "Unlock Advanced Features",
       benefits: [
-        "Up to 3 clusters per month",
-        "Advanced analytics and reporting",
-        "Access to business templates",
-        "Priority customer support",
-        "Exclusive webinars and training",
+        "Free Website Analysis & Consultancy",
+        "Full SEO Optimization & Page Ranking",
+        "Advanced Click-Through Analytics & User Behavior Insights",
+        "Personalized Chatbots Powered by GEMINI LLM",
+        "AI-Driven LinkedIn Prospecting",
+        "Full Email Automation & Meeting Scheduling",
+        "Advanced CRM Integration",
+        "Custom Reporting",
+        "Priority Support",
       ],
+      
       limitations: [
-        "No custom branding",
-        "Limited access to business resources",
       ],
       prices: {
-        monthly: 30,
-        yearly: 288,
+        monthly: 250,
+        yearly: 2520,
       },
       stripeIds: {
         monthly: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PRICE_ID,
@@ -135,11 +140,8 @@ export const priceDataMap: Record<string, SubscriptionPlanTranslation[]> = {
       title: "Business",
       description: "For Power Users",
       benefits: [
-        "Up to 10 clusters per month",
-        "Real-time analytics and reporting",
-        "Access to all templates, including custom branding",
-        "24/7 business customer support",
-        "Personalized configuration and account management",
+        "Customised as per needs",
+        "Includes all features in pro package",
       ],
       limitations: [],
       prices: {

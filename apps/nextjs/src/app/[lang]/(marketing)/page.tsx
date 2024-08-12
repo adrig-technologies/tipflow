@@ -62,7 +62,7 @@ export default async function IndexPage({
               <div className="mt-6">
                 <h1 className="relative mb-6 max-w-4xl text-left text-2xl font-bold dark:text-zinc-100 sm:text-4xl md:text-4xl xl:text-4xl">
                   {
-                    "Tipflow: Gemini - Powered SaaS. Generate Leads, Boost Success."
+                    "Tipflow: Gemini - Powered SaaS. Nurture Leads, Boost Success."
                   }
                   {/* <span className="text-sm font-normal">Fingerprint: {fingerprint}</span> */}
                 </h1>
@@ -112,10 +112,10 @@ export default async function IndexPage({
         </div>
       </section>
 
-      <section className="w-full px-8 pt-10 sm:px-0 sm:pt-0 md:px-0 md:pt-0 xl:px-[220px] xl:pt-0">
+      <section className="w-full px-8 pt-10 sm:pt-0  md:pt-0 xl:px-[220px] xl:pt-0">
         <div className="flex h-full w-full flex-col items-center pb-[100px] pt-10">
           <div>
-            <h1 className="text-center text-3xl font-bold dark:text-zinc-100 md:text-5xl xl:mb-6">
+            <h1 className="text-center text-3xl font-bold  dark:text-zinc-100 md:text-5xl xl:mb-6">
               Helping our clients in achieving a 10X increase in conversion
               rates.
             </h1>
