@@ -20,10 +20,10 @@ export function XBlogArticle() {
             />
           </div>
           <div className=" p-4">
-            <h2 className="my-4 text-lg font-bold text-zinc-700">
+            <h2 className="my-4 text-sm min-[1657px]:text-lg font-bold text-zinc-700">
               {blogContent.title}
             </h2>
-            <h2 className="my-4 text-sm font-normal text-zinc-500">
+            <h2 className="my-4 text-xs min-[1657px]:text-sm font-normal text-zinc-500">
               {blogContent.description}
             </h2>
             <div className="mt-10 flex flex-row items-center justify-between">
@@ -41,11 +41,11 @@ export function XBlogArticle() {
 
 const blogContent = {
   slug: "Making-Sense-of-React-Server-Components",
-  author: "Nextify",
+  author: "Tipflow",
   date: "26th March, 2024",
-  title: "Making Sense of React Server Components",
+  title: "Harnessing the Power of GEMINI in SaaS",
   description:
-    "So, here's something that makes me feel old: React celebrated its 10th birthday this year!",
+    "GEMINI AI revolutionizes SaaS with smarter, efficient workflows, transforming business operations for better outcomes.",
   image:
     "https://cdn.sanity.io/images/tpb4obti/production/50c13f886c039225be4e7e99023b8f1e2b4161b9-1792x1024.png",
   authorAvatar:
