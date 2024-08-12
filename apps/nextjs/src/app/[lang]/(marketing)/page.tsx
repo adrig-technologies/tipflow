@@ -80,8 +80,8 @@ export default async function IndexPage({
                 </Link>
 
                 <Link href="https://github.com/saasfly/saasfly" target="_blank">
-                  <div className="flex h-full items-center justify-center">
-                    <Icons.GitHub className="mr-2 h-6 w-6" />
+                  <div className="flex h-full items-center justify-center ">
+                    <Icons.Web className="mr-2 h-6 w-6" />
                     <span className="text-base font-semibold">
                       {"Contact us"}
                     </span>

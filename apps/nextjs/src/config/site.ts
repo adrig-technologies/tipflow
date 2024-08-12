@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: "Saasfly",
-  description: "We provide an easier way to build saas service in production",
+  name: "Tipflow",
+  description: "Boost Revenue by Converting Prospects to Clients and Ensuring Customer Success with Tipflow.",
   url: "https://github.com/saasfly/saasfly",
   ogImage: "",
   links: {
