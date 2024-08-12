@@ -21,6 +21,7 @@ import type { Meteor } from "~/types/meteors";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffectDemo } from "~/components/canvas-top-layer";
 import { BentoGridDemo } from "~/components/bentogriddemo";
+import { TypewriterEffectSmoothDemo } from "~/components/typewritereffectsmoothdemo";
  
 // import { useState } from "react";
 
@@ -70,7 +71,7 @@ export default async function IndexPage({
               <div>
                 <span className="text-zinc-500 sm:text-lg">
                   {
-                    "Boost Revenue by Converting Prospects to Clients and Ensuring Customer Success with Tipflow."
+                    "Boost Revenue by Nurturing and Converting Prospects to Clients."
                   }
                 </span>
                 <TypewriterEffectSmooths />
@@ -159,7 +160,7 @@ export default async function IndexPage({
           <div className="mb-6 text-xl dark:text-zinc-100 md:text-xl">
             Don't just take our word for it. Here's what{" "}
             <span className="font-bold">real people</span> are saying about
-            Saasfly.
+            Tipflow.
           </div>
 
           <div className="w-full ">
@@ -168,6 +169,7 @@ export default async function IndexPage({
         </div>
       </section>
       <BentoGridDemo />
+      <TypewriterEffectSmoothDemo />
     </>
   );
 }

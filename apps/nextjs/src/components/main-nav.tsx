@@ -32,12 +32,12 @@ export function MainNav({ items, children, params: { lang } }: MainNavProps) {
     <div className="flex gap-6 md:gap-10">
       <Link href={`/${lang}`} className="hidden items-center space-x-2 md:flex">
         <div>
-          <Image
+          {/* <Image
             src="/images/avatars/tipflowlogo.svg"
             width="36"
             height="36"
             alt=""
-          />
+          /> */}
         </div>
         <div className="text-2xl font-semibold">Tipflow</div>
       </Link>

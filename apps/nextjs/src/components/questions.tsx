@@ -9,49 +9,21 @@ export function Questions() {
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
-        <AccordionTrigger>About Saasfly</AccordionTrigger>
+        <AccordionTrigger>About Tipflow</AccordionTrigger>
         <AccordionContent>
-          Nextify Limited’s team of experienced developers has invested years
-          into refining our software development methodologies. We’re proud to
-          present our starter kit, a culmination of best practices and proven
-          tools extracted from countless successful projects. This extensively
-          tested kit is more than just code, it’s a cornerstone of our daily
-          operations, consistently helping us deliver exceptional results for
-          our clients. While informed by our unique experiences, the kit’s
-          solutions are meticulously chosen to address common challenges and fit
-          a wide range of scenarios. We believe it offers a streamlined and
-          efficient framework for building SaaS products, empowering you to
-          achieve your project goals.
+        Tipflow is a cutting-edge SaaS platform designed to revolutionize how businesses generate leads and engage with their customers. Powered by advanced AI technologies, including the GEMINI LLM, Tipflow offers a comprehensive suite of tools that streamline digital marketing efforts, optimize website performance, and automate key sales processes. From personalized chatbots to in-depth analytics and SEO optimization, Tipflow empowers businesses to convert prospects into loyal clients, drive revenue growth, and deliver exceptional customer experiences. Whether you’re a startup or an established enterprise, Tipflow provides the solutions you need to stay ahead in today’s competitive landscape.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>Why Next.js?</AccordionTrigger>
+        <AccordionTrigger>Why Choose Us?</AccordionTrigger>
         <AccordionContent>
-          Next.js is a powerful and versatile framework that offers a wide range
-          of benefits for building web applications. It is known for its
-          excellent performance, strong developer experience, and comprehensive
-          feature set.
+        Choosing Tipflow means partnering with a platform that’s dedicated to driving your business success. Our AI-powered tools are designed to maximize your lead generation, optimize your online presence, and automate critical sales processes, all while delivering a personalized experience for your customers. We offer tailored solutions that adapt to your unique business needs, ensuring you stay ahead of the competition. With our commitment to innovation, exceptional support, and proven results, Tipflow not only helps you achieve your goals but exceeds your expectations. Experience growth, efficiency, and customer satisfaction like never before with Tipflow.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>Is this starter for you?</AccordionTrigger>
+        <AccordionTrigger>How Can We Help You?</AccordionTrigger>
         <AccordionContent>
-          If you’re embarking on the development of a SaaS service and are in
-          search of a solid foundation, meticulously crafted architecture, and
-          an enriching developer experience, then this starter kit stands as a
-          prime resource to consider. It encompasses a holistic collection of
-          best practices and tools, each thoroughly vetted and demonstrated to
-          be effective across numerous projects. Even if you’re uncertain about
-          whether a starter kit fits your project’s needs, this resource still
-          holds significant value. By delving into the starter kit, you have the
-          opportunity to garner inspiration from its array of solutions to
-          common challenges encountered by developers. This exploration can
-          serve as a pathway to identifying commendable practices and devising
-          robust solutions tailored to your specific development process. In
-          summary, whether you opt to leverage this starter kit in its entirety
-          or merely extract certain ideas from it, we are confident it provides
-          indispensable insights and tools for anyone aiming to create a
-          high-caliber SaaS service.
+        At Tipflow, our mission is to empower your business with the tools and insights needed to thrive in the digital age. We offer a comprehensive suite of AI-driven solutions designed to help you attract, engage, and convert more leads, ultimately boosting your sales and revenue. Our platform optimizes your online presence by enhancing SEO performance, providing in-depth user behavior analytics, and implementing personalized engagement strategies like chatbots and smart pop-ups. But we don't stop there. Tipflow also simplifies your sales processes through automation, from managing email campaigns to scheduling meetings, ensuring your team can focus on what they do best—closing deals and nurturing client relationships. With seamless CRM integration and advanced reporting, you’ll have all the data you need to make informed decisions and refine your strategy. We tailor our approach to meet your unique business goals, providing ongoing support and consultation to ensure you’re not just keeping up with the competition but staying ahead. Whether you're a startup looking to scale or an established enterprise aiming to optimize, Tipflow provides the expertise and innovation you need to drive sustained growth and customer satisfaction. Let us help you transform your workflows, enhance your customer interactions, and achieve measurable success.
         </AccordionContent>
       </AccordionItem>
     </Accordion>

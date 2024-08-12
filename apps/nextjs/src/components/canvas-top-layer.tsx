@@ -28,7 +28,7 @@ export function CanvasRevealEffectDemo() {
           name="Debashis Das"
           role="VP, Apexon"
           title="I sat with Vijay and looked at the Tip Flow's beta, which I definitely want to try. If you’re serious about improving your lead nurturing, I’d say give Tipflow a shot. It seems like a tool that could make a difference in keeping potential clients engaged and boosting your sales."
-          image="/images/avatars/prabhu.png"
+          image="/images/avatars/3rdone.jpeg"
           icon={<TipflowIcon />}
         >
           <CanvasRevealEffect
@@ -99,22 +99,25 @@ const Card = ({
         )}
       </AnimatePresence>
 
-      <div className="relative z-20">
-        <div className="absolute left-[calc(50%-24px)] top-[50%]  w-full h-full transition duration-200 group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0">
-          {icon}
-        </div>
+      <div className="relative z-20 ">
+          <div className="mt-4 flex items-center gap-4 absolute inset-0 transition  duration-200 group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0">
+            <img className="h-10 w-10 rounded-full" src={image} alt="" />
+            <div className="font-medium dark:text-white">
+              <div>{name}</div>
+              <div className="text-sm text-gray-500 dark:text-gray-400">
+                {role}
+              </div>
+            </div>
+          </div>
+        {/* <div className="absolute left-[calc(50%-24px)] top-[50%]  w-full h-full transition duration-200 group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0
+                        ">
+          {icon} 
+          <img className="h-10 w-10 rounded-full" src={image} alt="" />
+
+        </div> */}
         <h2 className="relative z-10 mt-4 text-xl font-bold text-black opacity-0 transition  duration-200 group-hover/canvas-card:-translate-y-2 group-hover/canvas-card:text-white group-hover/canvas-card:opacity-100 dark:text-white">
           {title}
         </h2>
-        <div className="mt-4 flex items-center gap-4 opacity-0 transition  duration-200 group-hover/canvas-card:-translate-y-2 group-hover/canvas-card:text-white group-hover/canvas-card:opacity-100">
-          <img className="h-10 w-10 rounded-full" src={image} alt="" />
-          <div className="font-medium dark:text-white">
-            <div>{name}</div>
-            <div className="text-sm text-gray-500 dark:text-gray-400">
-              {role}
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
