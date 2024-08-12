@@ -12,6 +12,7 @@ import { useSigninModal } from "~/hooks/use-signin-modal";
 import type { MainNavItem } from "~/types";
 import { MainNav } from "./main-nav";
 import { UserAccountNav } from "./user-account-nav";
+import { useRouter } from "next/navigation";
 
 type Dictionary = Record<string, string>;
 
@@ -38,6 +39,12 @@ export function NavBar({
   marketing,
   dropdown,
 }: NavBarProps) {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/register');
+  };
+
   const scrolled = useScroll(50);
   const signInModal = useSigninModal();
   return (
@@ -76,7 +83,8 @@ export function NavBar({
               className="px-3"
               variant="default"
               size="sm"
-              onClick={signInModal.onOpen}
+              // onClick={signInModal.onOpen}
+              onClick={handleClick}
             >
               {typeof marketing.signup === "string"
                 ? marketing.signup
