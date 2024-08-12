@@ -16,6 +16,12 @@ import { WordReveal } from "~/components/word-reveal";
 import type { Locale } from "~/config/i18n-config";
 import { getDictionary } from "~/lib/get-dictionary";
 import type { Meteor } from "~/types/meteors";
+
+ 
+import { AnimatePresence, motion } from "framer-motion";
+import { CanvasRevealEffectDemo } from "~/components/canvas-top-layer";
+import { BentoGridDemo } from "~/components/bentogriddemo";
+ 
 // import { useState } from "react";
 
 const meteors_data: Meteor = {
@@ -35,13 +41,13 @@ export default async function IndexPage({
 }) {
   const dict = await getDictionary(lang);
 
-//   const [fingerprint, setFingerprint] = useState("");
-//   const dataa= getCurrentBrowserFingerPrint().then((fp) => {
-//     // fingerprint is your unique browser id.
-//     // This is well tested
-//     setFingerprint(fp)
-//     // the result you receive here is the combination of Canvas fingerprint and audio fingerprint.
-// })
+  //   const [fingerprint, setFingerprint] = useState("");
+  //   const dataa= getCurrentBrowserFingerPrint().then((fp) => {
+  //     // fingerprint is your unique browser id.
+  //     // This is well tested
+  //     setFingerprint(fp)
+  //     // the result you receive here is the combination of Canvas fingerprint and audio fingerprint.
+  // })
   return (
     <>
       <section className="w-full px-8 sm:px-48 md:px-48 xl:h-[100vh] xl:px-48 ">
@@ -49,23 +55,23 @@ export default async function IndexPage({
           <div className="flex flex-col items-start">
             <div className="flex flex-col pt-4 md:pt-28 lg:pt-28 xl:pt-28">
               <Link href="https://www.adrig.co.in/" target="_blank">
-                <DocumentGuide>
-                  {"Introducing ADRIG"}
-                </DocumentGuide>
+                <DocumentGuide>{"Introducing ADRIG"}</DocumentGuide>
               </Link>
 
               <div className="mt-6">
                 <h1 className="relative mb-6 max-w-4xl text-left text-2xl font-bold dark:text-zinc-100 sm:text-4xl md:text-4xl xl:text-4xl">
                   {
-                    "Tipflow: Gemini - Powered SaaS. Generate Leads, Boost Success."}
-                      {/* <span className="text-sm font-normal">Fingerprint: {fingerprint}</span> */}
+                    "Tipflow: Gemini - Powered SaaS. Generate Leads, Boost Success."
+                  }
+                  {/* <span className="text-sm font-normal">Fingerprint: {fingerprint}</span> */}
                 </h1>
               </div>
 
               <div>
                 <span className="text-zinc-500 sm:text-lg">
                   {
-                    "Boost Revenue by Converting Prospects to Clients and Ensuring Customer Success with Tipflow."}
+                    "Boost Revenue by Converting Prospects to Clients and Ensuring Customer Success with Tipflow."
+                  }
                 </span>
                 <TypewriterEffectSmooths />
               </div>
@@ -105,17 +111,16 @@ export default async function IndexPage({
         </div>
       </section>
 
-      <section className="w-full px-8 pt-10 sm:px-0 sm:pt-0 md:px-0 md:pt-0 xl:px-0 xl:pt-0">
+      <section className="w-full px-8 pt-10 sm:px-0 sm:pt-0 md:px-0 md:pt-0 xl:px-[220px] xl:pt-0">
         <div className="flex h-full w-full flex-col items-center pb-[100px] pt-10">
           <div>
-            <h1 className="xl:mb-6 text-center text-3xl font-bold dark:text-zinc-100 md:text-5xl">
-              Helping our clients in achieving a 10X increase in conversion rates.
+            <h1 className="text-center text-3xl font-bold dark:text-zinc-100 md:text-5xl xl:mb-6">
+              Helping our clients in achieving a 10X increase in conversion
+              rates.
             </h1>
           </div>
-
         </div>
       </section>
-
 
       <section className="hidden h-[100vh] w-full xl:block">
         <div className="flex h-full w-full justify-between px-[220px]">
@@ -157,13 +162,12 @@ export default async function IndexPage({
             Saasfly.
           </div>
 
-          <div className="w-full overflow-x-hidden">
-            <Comments />
+          <div className="w-full ">
+            <CanvasRevealEffectDemo/>
           </div>
         </div>
       </section>
-
-      
+      <BentoGridDemo />
     </>
   );
 }
