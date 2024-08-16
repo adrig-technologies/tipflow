@@ -1,5 +1,6 @@
 import { getCurrentUser } from "@saasfly/auth";
 import { AppleCardsCarouselDemo } from "~/components/apple-card/apple-cards-carousel-demo";
+import { AppleCardsCarouselDemo1 } from "~/components/apple-card1/apple-cards-carousel-demo";
 import { GoogleGeminiEffectDemo } from "~/components/google-gemini-effect-demo";
 
 import { PricingCards } from "~/components/price/pricing-cards";
@@ -31,6 +32,7 @@ export default async function PricingPage({
 
       <GoogleGeminiEffectDemo />
       <AppleCardsCarouselDemo />
+      <AppleCardsCarouselDemo1 />
     </div>
   );
 }
