@@ -14,7 +14,7 @@ export const getMarketingConfig = async ({
     mainNav: [
       {
         title: dict.marketing.main_nav_features,
-        href: `/#features`,
+        href: `/features`,
       },
       {
         title: dict.marketing.main_nav_pricing,

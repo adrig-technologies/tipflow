@@ -1,4 +1,6 @@
 import { getCurrentUser } from "@saasfly/auth";
+import { AppleCardsCarouselDemo } from "~/components/apple-card/apple-cards-carousel-demo";
+import { GoogleGeminiEffectDemo } from "~/components/google-gemini-effect-demo";
 
 import { PricingCards } from "~/components/price/pricing-cards";
 import { PricingFaq } from "~/components/price/pricing-faq";
@@ -7,7 +9,7 @@ import { getDictionary } from "~/lib/get-dictionary";
 import { trpc } from "~/trpc/server";
 
 export const metadata = {
-  title: "Pricing",
+  title: "Features",
 };
 
 export default async function PricingPage({
@@ -17,23 +19,18 @@ export default async function PricingPage({
     lang: Locale;
   };
 }) {
-  const user = await getCurrentUser();
+  // const user = await getCurrentUser();
   const dict = await getDictionary(lang);
   let subscriptionPlan;
 
-  if (user) {
-    subscriptionPlan = await trpc.stripe.userPlans.query();
-  }
+  // if (user) {
+  //   subscriptionPlan = await trpc.stripe.userPlans.query();
+  // }
   return (
     <div className="flex w-full flex-col gap-16 py-8 md:py-8">
-      <PricingCards
-        userId={user?.id}
-        subscriptionPlan={subscriptionPlan}
-        dict={dict.price}
-        params={{ lang }}
-      />
-      {/* <hr className="container" /> */}
-      {/* <PricingFaq params={{ lang }} dict={dict.price} /> */}
+
+      <GoogleGeminiEffectDemo />
+      <AppleCardsCarouselDemo />
     </div>
   );
 }
