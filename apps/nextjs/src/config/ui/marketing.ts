@@ -25,9 +25,13 @@ export const getMarketingConfig = async ({
         href: `/blog`,
       },
       {
-        title: dict.marketing.main_nav_documentation,
-        href: `/docs`,
+        title: "B2B Community",
+        href: `/b2bcommunity`,
       },
+      // {
+      //   title: dict.marketing.main_nav_documentation,
+      //   href: `/docs`,
+      // },
     ],
   };
 };

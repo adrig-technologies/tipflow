@@ -31,9 +31,7 @@ export default async function PricingPage({
   return (
     <div className="flex w-full flex-col gap-16 py-8 md:py-8">
 
-      <GoogleGeminiEffectDemo />
-      <AppleCardsCarouselDemo />
-      <AppleCardsCarouselDemo1 />
+      <LampDemo />
     </div>
   );
 }
